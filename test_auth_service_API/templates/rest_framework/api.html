@@ -1,0 +1,21 @@
+{% extends "rest_framework/base.html" %}
+
+   {% block title %} Auth Service - API {% endblock %}
+     {% block branding %}
+     <!-- <a class="brand" href="#">AirAsia</a> -->
+     <a href="/admin" class="navbar-left"><img src="https://filedn.com/liJBXFivAtqhCNx88X6BGPV/images/AirAsia-Logo.png" alt="airasia" width="150" height="60"></a>
+     {% endblock %}
+
+     {% block bootstrap_theme %}
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.0.2/sandstone/bootstrap.min.css" type="text/css">
+     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/admin">Dash</a></li>
+        <li class="breadcrumb-item"><a href="/api/users">Users</a></li>
+        <li class="breadcrumb-item"><a href="/api/role">Roles</a></li>
+        <li class="breadcrumb-item"><a href="/api/permission">Permission</a></li>
+      </ol>
+    </nav>
+    {% endblock %}
+ 
+ {% block bootstrap_navbar_variant %}{% endblock %}
